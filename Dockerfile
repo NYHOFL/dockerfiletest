@@ -8,5 +8,5 @@ COPY assignment3app /flaskapp
 WORKDIR /flaskapp
 RUN pip3 install -r requirements.txt
 EXPOSE 5000
-chmod +x startup.sh
+RUN chmod +x startup.sh
 ENTRYPOINT "./startup.sh"
